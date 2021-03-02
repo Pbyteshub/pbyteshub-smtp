@@ -9,7 +9,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <tab id="pbyteshub" sortOrder="400" translate="label">
-            <label>MagePal</label>
+            <label>Pbyteshub</label>
         </tab>
         <section id="pbyteshub_Smtp" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label">
             <label>SMTP Configuration</label>
@@ -17,46 +17,6 @@
             <resource>Pbyteshub_Smtp::pbyteshub_Smtp</resource>
             <group id="about" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="0" translate="label">
                 <attribute type="expanded">1</attribute>
-                <label>About MagePal SMTP</label>
-                <comment>
-                    <![CDATA[
-                    <div id="pbyteshub-info">
-                        Copyright © 2020 <a href="https://www.pbyteshub.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">MagePal, LLC</a>
-                        <a href="https://www.pbyteshub.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#documentation" target="_blank">Documentation</a>
-                        <a href="https://www.pbyteshub.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#support">Support</a>
-                        <a href="https://www.pbyteshub.com/help/docs/smtp-magento?utm_source=smtp&utm_medium=admin#current_version" target="_blank">Latest Version</a>
-                        <a href="https://www.pbyteshub.com/custom-smtp.html?utm_source=smtp&utm_medium=admin" target="_blank">Extension Detail</a>
-                        <a href="https://www.pbyteshub.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">More Extensions</a>
-                    </div>
-                    <div id="pbyteshub-promo">
-                        Get more from your order confirmation emails by promoting other complementary products!
-                        Learn more about our new <a href="http://bit.ly/smtp-esp" target="_blank">Enhanced Transactional Email</a> extension.
-                    </div>
-                    <hr style="border-top: 1px solid #e3e3e3" />
-                    <style>
-                        #pbyteshub-info a {
-                            font-weight: bold;
-                            border-left: 2px solid #e3e3e3;
-                            padding-left:10px;
-                            padding-right:10px;
-                            color: #ef7e1e;
-                        }
-
-                        #pbyteshub-info a:first-child {
-                            padding-left: 5px;
-                            border-left: none;
-                        }
-
-                        #pbyteshub-info {
-                            padding-bottom: 5px;
-                        }
-
-                        .section-config.active #pbyteshub_Smtp_about-head {
-                            padding-bottom: 0px;
-                        }
-                     </style>
-                  ]]>
-                </comment>
                 <field id="composer_version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Composer Version</label>
                     <frontend_model>Pbyteshub\Smtp\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
@@ -70,46 +30,6 @@
         <section id="system">
             <group id="Smtp" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>SMTP Configuration and Settings (Gmail/Google/AWS/Office365 etc)</label>
-                <comment>
-                  <![CDATA[
-                    <div id="pbyteshub-info">
-                        Copyright © 2020 <a href="https://www.pbyteshub.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">MagePal, LLC</a>
-                        <a href="https://www.pbyteshub.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#documentation" target="_blank">Documentation</a>
-                        <a href="https://www.pbyteshub.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#support">Support</a>
-                        <a href="https://www.pbyteshub.com/help/docs/smtp-magento?utm_source=smtp&utm_medium=admin#current_version" target="_blank">Latest Version</a>
-                        <a href="https://www.pbyteshub.com/custom-smtp.html?utm_source=smtp&utm_medium=admin" target="_blank">Extension Detail</a>
-                        <a href="https://www.pbyteshub.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">More Extensions</a>
-                    </div>
-                    <div id="pbyteshub-promo">
-                        Get more from your order confirmation emails by promoting other complementary products!
-                        Learn more about our new <a href="http://bit.ly/smtp-esp" target="_blank">Enhanced Transactional Email</a> extension.
-                    </div>
-                    <hr style="border-top: 1px solid #e3e3e3" />
-                    <style>
-                        #pbyteshub-info a {
-                            font-weight: bold;
-                            border-left: 2px solid #e3e3e3;
-                            padding-left:10px;
-                            padding-right:10px;
-                            color: #ef7e1e;
-                        }
-
-                        #pbyteshub-info a:first-child {
-                            padding-left: 5px;
-                            border-left: none;
-                        }
-
-                        #pbyteshub-info {
-                            padding-bottom: 5px;
-                        }
-
-                        .section-config.active #system_Smtp-head {
-                            padding-bottom: 0px;
-                        }
-                     </style>
-                  ]]>
-                </comment>
-
                 <field id="version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Version</label>
                     <frontend_model>Pbyteshub\Smtp\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
